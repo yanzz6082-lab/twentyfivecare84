@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f0;
+  color: #2d3436;
+}
+
+/* HEADER */
+header {
+  background: #1b5e20;
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  color: #81c784;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* SECTION CONTROL */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.donation-box {
+  text-align: center;
+  background: #1b5e20;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.btn-donasi {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #ffca28;
+  font-weight: bold;
+}
+
+footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
